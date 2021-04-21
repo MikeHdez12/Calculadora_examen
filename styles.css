@@ -1,0 +1,92 @@
+:root {
+    --colorb: #A69281;
+    --colorbackground: #9b0000;
+    --colorcero: #98f8ab;
+    --colorigual: #008100;
+    --colornumeros: #ffffff;
+    --colorscreen: #000000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-calculator {
+    width: 400px;
+    height: 450px;
+    background-color: var(--colorbackground);
+    border-radius: 10px;
+    padding: 20px 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 85px;
+    grid-gap: 20px;
+}
+
+.Screen {
+    background-color: var(--colorscreen);
+    border-radius: 10px;
+    color: var(--colornumeros);
+    padding: 15px;
+    grid-column: 1 / 5;
+}
+
+.Screen input {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    outline: inherit;
+    font-size: 50px;
+    width: 100%;
+}
+
+.botones-c {
+    background-color: var(--colorb);
+    border-radius: 10px;
+}
+
+.botones-c input {
+    border: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    color: #7e7e7e;
+    font-size: 35px;
+}
+
+.igual {
+    background-color: var(--colorigual);
+}
+
+.limpiar {
+    background-color: var(--colorcero);
+}
+
+.botones-c :hover {
+    transition-duration: 0.4s;
+    background-color: #ffb497;
+    color: white;
+}
+
+.btn-limpiar :hover {
+    transition-duration: 0.4s;
+    background-color: #66f789;
+    color: white;
+}
+
+.btn-igual :hover {
+    transition-duration: 0.4s;
+    background-color: #A69281;
+    color: black;
+}

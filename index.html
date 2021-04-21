@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="c-calculator">
+
+            <div class="Screen">
+                <input type="text" placeholder="0" disabled id="Screen-res">
+            </div>
+            <div class="botones-c">
+                <input type="button" value="7" onclick="clic(this)">
+            </div>
+            <div class="botones-c">
+                <input type="button" value="8" onclick="clic(this)">
+            </div>
+            <div class="botones-c">
+                <input type="button" value="9" onclick="clic(this)">
+            </div>
+            <div class="botones-c ">
+                <input type="button" value="/" onclick="clic(this)">
+            </div>
+            <div class="botones-c">
+                <input type="button" value="4" onclick="clic(this)">
+            </div>
+            <div class="botones-c">
+                <input type="button" value="5" onclick="clic(this)">
+            </div>
+            <div class="botones-c">
+                <input type="button" value="6" onclick="clic(this)">
+            </div>
+            <div class="botones-c">
+                <input type="button" value="*" onclick="clic(this)">
+            </div>
+            <div class="botones-c">
+                <input type="button" value="1" onclick="clic(this)">
+            </div>
+            <div class="botones-c">
+                <input type="button" value="2" onclick="clic(this)">
+            </div>
+            <div class="botones-c">
+                <input type="button" value="3" onclick="clic(this)">
+            </div>
+            <div class="botones-c">
+                <input type="button" value="-" onclick="clic(this)">
+            </div>
+            <div class="botones-c">
+                <input type="button" value="0" onclick="clic(this)">
+            </div>
+            <div class="botones-c">
+                <input type="button" value="+" onclick="clic(this)">
+            </div>
+            <div class="botones-c  btn-limpiar">
+                <input type="button" value="C" class="limpiar" onclick="CleanScreen()">
+            </div>
+            <div class="botones-c  btn-igual">
+                <input type="button" value="=" class="igual" onclick="calcular()">
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
